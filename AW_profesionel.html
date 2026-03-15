@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* BODY */
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#ffffff;
+  margin:0;
+  padding:0;
+  line-height:1.5;
+}
+
+/* HEADER */
+.header-full{
+  width:100%;
+  background:#f8f9fb;
+  border-bottom:2px solid #2a5caa;
+  padding:12px 0;
+}
+
+.header-content{
+  max-width:600px;
+  margin:auto;
+  text-align:center;
+  padding:0 20px;
+}
+
+/* INITIALS */
+.initials-circle{
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  background:#2a5caa;
+  color:white;
+  font-weight:bold;
+  font-size:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 15px auto;
+  animation:pulse 4s infinite;
+}
+
+.personal-info h1{
+  margin:0;
+  color:#2a5caa;
+  font-size:22px;
+}
+
+.title{
+  font-size:14px;
+  color:#666;
+  font-style:italic;
+}
+
+/* SEPARATOR */
+.separator{
+  border-top:1px dashed #cccccc;
+  margin:15px 0;
+}
+
+/* BODY TEXT */
+.letter-text{
+  font-size:15px;
+  color:#000;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+
+/* SIGNATURE */
+.signature-name{
+  font-size:18px;
+  color:#2a5caa;
+  font-weight:bold;
+}
+
+/* CONTACT */
+.contact-info{
+  margin-top:15px;
+  font-size:14px;
+  color:#555;
+}
+
+.contact-item{
+  margin-bottom:8px;
+}
+
+.contact-label{
+  font-weight:bold;
+  min-width:75px;
+  display:inline-block;
+}
+
+.contact-value a{
+  color:#2a5caa;
+  text-decoration:none;
+}
+
+/* FOOTER */
+.footer-full{
+  width:100%;
+  margin-top:40px;
+  background:#f5f5f5;
+  border-top:2px solid #2a5caa;
+  padding:25px 0;
+}
+
+.footer-content{
+  width:95%;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+/* RESPONSIVE BANNER */
+.dynamic-banner{
+  display:block;
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  border-radius:16px;
+  overflow:hidden;
+  transition:all .35s ease;
+}
+
+.dynamic-banner img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* hover effect */
+.dynamic-banner:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* footer text */
+.footer-text{
+  margin-top:20px;
+  font-size:12px;
+  color:#555;
+}
+
+.copyright{
+  margin-top:8px;
+  font-size:11px;
+  color:#999;
+  font-style:italic;
+}
+
+/* ANIMATIONS */
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.08)}
+  100%{transform:scale(1)}
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width:600px){
+
+  .initials-circle{
+    width:50px;
+    height:50px;
+    font-size:20px;
+  }
+
+  .personal-info h1{
+    font-size:18px;
+  }
+
+  .signature-name{
+    font-size:16px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header-full">
+<div class="header-content">
+
+<div class="initials-circle">DP</div>
+
+<div class="personal-info">
+<h1>Denislav Pasev</h1>
+<div class="title">Entwickler & Fachinformatiker</div>
+</div>
+
+</div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div style="max-width:900px;margin:auto;padding:20px">
+
+<div class="separator"></div>
+
+<div class="signature-name">
+Sehr geehrte Damen und Herren,
+</div>
+
+<div class="separator"></div>
+
+<div class="letter-text">
+...
+</div>
+
+<div class="separator"></div>
+
+<div class="signature-name">
+Mit freundlichen Grüßen
+</div>
+
+<div class="signature-name">
+Denislav Pasev
+</div>
+
+<div class="contact-info">
+
+<div class="contact-item">
+<span class="contact-label">E-Mail:</span>
+<span class="contact-value">
+<a href="mailto:pasevdenislav@gmail.com">pasevdenislav@gmail.com</a>
+</span>
+</div>
+
+<div class="contact-item">
+<span class="contact-label">Telefon:</span>
+<span class="contact-value">+49 (0)157 50800967</span>
+</div>
+
+<div class="contact-item">
+<span class="contact-label">Adresse:</span>
+<span class="contact-value">
+Münsterstraße 177, 44145 Dortmund, Deutschland
+</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-full">
+
+<div class="footer-content">
+
+<a href="https://pasevsu.github.io" target="_blank" class="dynamic-banner">
+<img src="https://pasevsu.github.io/static/img/banner-w-bg.png"
+alt="Pasev Systems Banner">
+</a>
+
+<div class="footer-text">
+<strong>Denislav Pasev</strong><br>
+Entwickler & Fachinformatiker
+</div>
+
+<div class="copyright">
+© 2026 Alle Rechte vorbehalten
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
