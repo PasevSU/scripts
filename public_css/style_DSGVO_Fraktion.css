@@ -1,0 +1,211 @@
+/* GLOBALE STILE - VOLLBILD */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HAUPTBEHÄLTER - VON RAND ZU RAND */
+.email-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+}
+
+/* E-MAIL-CONTAINER - ADAPTIV */
+.email-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* --- DYNAMISCHES BLAUES BAND (VON RAND ZU RAND) --- */
+.dsgvo-banner {
+    background: linear-gradient(145deg, #0a3d62, #1e4f7a, #0052a0);
+    width: 100%;
+    padding: clamp(8px, 1.8vw, 18px) 0;
+}
+
+.dsgvo-banner .banner-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(10px, 2.5vw, 25px);
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: clamp(5px, 1vw, 10px);
+    flex-wrap: wrap;
+    margin-bottom: clamp(4px, 0.8vw, 8px);
+}
+
+.dsgvo-logo {
+    font-size: clamp(22px, 4vw, 35px);
+    line-height: 1;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+}
+
+.logo-placeholder {
+    font-weight: 800;
+    font-size: clamp(14px, 2.5vw, 22px);
+    letter-spacing: 0.3px;
+    background: rgba(255,255,255,0.15);
+    padding: clamp(2px, 0.5vw, 4px) clamp(5px, 1vw, 12px);
+    border-radius: 30px;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* RECHTLICHER TEXT - KLEIN UND KOMPAKT */
+.legal-text {
+    font-size: clamp(11px, 1.3vw, 13px);
+    font-weight: 400;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.legal-text p {
+    margin: clamp(4px, 0.8vw, 8px) 0;
+    color: #ffffff;
+}
+
+.legal-text strong {
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* SPEZIELLE AUSNAHME-KLARSTELLUNG - NOCH KLEINER */
+.legal-text .ausnahme {
+    margin-top: clamp(6px, 1vw, 10px);
+    padding-top: clamp(4px, 0.8vw, 6px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: clamp(10px, 1.2vw, 12px);
+    font-style: italic;
+}
+
+.legal-text .ausnahme strong {
+    font-weight: 800;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+/* HAUPTINHALT - NORMALE GRÖSSE FÜR E-MAIL-TEXT */
+.content {
+    flex: 1;
+    padding: clamp(20px, 4vw, 40px) clamp(15px, 3vw, 30px);
+    background: white;
+    width: 100%;
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.6;
+}
+
+/* KONTAKTINFORMATIONEN */
+.contact-info {
+    margin-top: 30px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    line-height: 1.5;
+}
+
+.contact-info p {
+    margin: 2px 0;
+}
+
+.contact-info a {
+    color: #0052a0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FUSSZEILE - KLEINER TEXT */
+.footer {
+    background-color: #f1f5f9;
+    padding: clamp(10px, 2vw, 18px) clamp(10px, 2.5vw, 25px);
+    font-size: clamp(10px, 1.2vw, 12px);
+    color: #1e293b;
+    text-align: left;
+    border-top: 1px solid #cbd5e1;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.footer p {
+    margin: clamp(4px, 0.8vw, 8px) 0;
+    color: #1e293b;
+}
+
+.footer .warning-title {
+    font-weight: 700;
+    color: #0052a0;
+    font-size: clamp(11px, 1.3vw, 13px);
+    margin-bottom: 4px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .legal-text {
+        font-size: 10px;
+    }
+    
+    .legal-text .ausnahme {
+        font-size: 9px;
+    }
+    
+    .content {
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        font-size: 13px;
+    }
+    
+    .footer {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .email-container {
+        max-width: 1400px;
+    }
+    
+    .legal-text {
+        font-size: 13px;
+    }
+    
+    .content {
+        font-size: 18px;
+    }
+}
